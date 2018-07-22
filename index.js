@@ -39,7 +39,6 @@ app.get('/', (req, res) => {
     adminContent = `
       <div>
         You appear to be logged in, so you can visit <a href="/admins">the Admins route</a>
-        and <a href="/table">Table route</a>
         or you can <a href="/logout">Logout</a>.
       </div>
     `;
@@ -49,6 +48,7 @@ app.get('/', (req, res) => {
       <h4>Hi!  Welcome to the React SSR API</h4>
       <div>
         You can see <a href="/users">the Users route</a>
+        of <a href="/table">Table route</a>
       </div>
       ${adminContent}
     </div>

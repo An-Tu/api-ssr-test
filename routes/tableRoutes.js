@@ -1,7 +1,5 @@
-const requireLogin = require('../middlewares/requireLogin');
-
 module.exports = app => {
-  app.get('/table', requireLogin, (req, res) => {
+  app.get('/table', (req, res) => {
     res.send(table);
   });
 };
