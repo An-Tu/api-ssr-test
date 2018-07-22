@@ -26,6 +26,7 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 require('./routes/userRoutes')(app);
+require('./routes/tableRoutes')(app);
 app.get('/', (req, res) => {
   let adminContent = `
     <div>
@@ -38,6 +39,7 @@ app.get('/', (req, res) => {
     adminContent = `
       <div>
         You appear to be logged in, so you can visit <a href="/admins">the Admins route</a>
+        and <a href="/table">Table route</a>
         or you can <a href="/logout">Logout</a>.
       </div>
     `;
